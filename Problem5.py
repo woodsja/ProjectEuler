@@ -9,6 +9,12 @@ while not stop:
 
     for i in range(1, 20):
         remainder = iterable % i + remainder
+        # holy shit, this takes forever
+        # could speed it up by limiting to prime factorization of range integers
+        # unfortunately, i realized this after I started running the program
+        # alternatively could  throw an exit flag as soon as remainder > 0
+        # prime factorization's probably faster...
+
         #print("i is currently {} and the remainder is currently {}".format(i, remainder))
 
     if remainder == 0:
